@@ -49,7 +49,7 @@
   <h2>Monitoring Sensor Cahaya - Automatic</h2>
   <p id="status">Status: Menyambung...</p>
   <p id="data">Menunggu data sensor...</p>
-  <img id="lamp-image" src="lampu-mati.png" alt="Lampu" class="off">
+  <img id="lamp image" src="lampu mati.png" alt="Lampu" class="off">
 
   <script>
     const options = {
@@ -78,7 +78,7 @@
       dataEl.innerText = msg;
 
       if (msg.includes("Lampu NYALA")) {
-        lampImg.src = "lampun yala.png";  
+        lampImg.src = "lampun nyala.png";  
         lampImg.className = 'on';
       } else if (msg.includes("Lampu MATI")) {
         lampImg.src = "lampu mati.png";   
